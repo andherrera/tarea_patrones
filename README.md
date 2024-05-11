@@ -1,15 +1,11 @@
-[TOCM]
-
-[TOC]
-
 # Tarea N1 - Problemas de patrones
-Arquitectura de Software Grupo 3 (Python)
+Arquitectura de software - Grupo 3 (Python)
 
 ## 1. Sistema de gestión de tareas
 **Contexto:**
 Imagina un sistema de gestión de tareas en el que los usuarios pueden crear, editar, eliminar y completar tareas. Cada acción realizada por el usuario corresponde a una acción que debe ser ejecutado. Además, es importante mantener un registro de todas las acciones realizadas para permitir la reversión de las mismas si es necesario.
 
-**Aplicación del Patrón: **
+**Aplicación del patrón: **
 En este escenario, el patrón será aplicado para encapsular cada una de las acciones que el usuario puede realizar sobre una tarea.
 
 El patrón que seleccione debe tener los siguientes beneficios:
@@ -29,7 +25,7 @@ Requerimientos del sistema:
 6. Una vez que los clientes hayan construido su pizza personalizada, deben poder revisarla y realizar el pedido.
 
 ## 3. La creación de un sistema de generación de informes personalizados con diferentes formatos de salida
-**Problema:** Sistema de Generación de Informes Personalizados
+**Problema:** Sistema de generación de informes personalizados
 
 L@ llamaron para desarrollar un software empresarial que necesita generar informes a partir de una base de datos. Los informes pueden tener diferentes formatos de salida, como PDF, Excel y HTML. Además, cada tipo de informe puede requerir pasos específicos de generación, como consultar la base de datos, aplicar cálculos y formatear el resultado final. Dado que los informes y los formatos de salida pueden ser diversos, es importante tener una solución que maneje esta complejidad y permita la generación de informes de manera flexible y extensible.
 
