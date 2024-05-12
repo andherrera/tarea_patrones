@@ -1,6 +1,14 @@
 # Tarea N1 - Problemas de patrones
 Arquitectura de software - Grupo 3 (Python)
 
+Miembros:
+
+Andres Mauricio Herrera
+Bryan López
+Eddy Narvaez
+Edisson Bustos
+John Camargo
+
 ## 1. Sistema de gestión de tareas
 **Contexto:**
 Imagina un sistema de gestión de tareas en el que los usuarios pueden crear, editar, eliminar y completar tareas. Cada acción realizada por el usuario corresponde a una acción que debe ser ejecutado. Además, es importante mantener un registro de todas las acciones realizadas para permitir la reversión de las mismas si es necesario.
