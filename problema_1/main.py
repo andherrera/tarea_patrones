@@ -10,24 +10,24 @@ class Client:
     def __init__(self):
         self.__task_manager = TaskHandler()
         self.__invoker = Invoker()
+        self.__task1 = Task(1, "Homework")
+        self.__task2 = Task(2, "Report")
 
     def run(self):
         # Create the first task and perform various commands
-        task1 = Task(1, "Homework")
-        self.__invoker.execute_command(AddTaskCommand(self.__task_manager, task1))
-        self.__invoker.execute_command(AddTaskCommand(self.__task_manager, task1))  # This should ideally show an error or be ignored since task1 is already added.
-        self.__invoker.execute_command(RemoveTaskCommand(self.__task_manager, task1))
+        self.__invoker.execute_command(AddTaskCommand(self.__task_manager, self.__task1))
+        self.__invoker.execute_command(AddTaskCommand(self.__task_manager, self.__task1))  # This should ideally show an error or be ignored since task1 is already added.
+        self.__invoker.execute_command(RemoveTaskCommand(self.__task_manager, self.__task1))
         self.__invoker.undo_last_command()  # Undo remove
-        self.__invoker.execute_command(EditTaskCommand(self.__task_manager, task1, "College Homework Design"))
+        self.__invoker.execute_command(EditTaskCommand(self.__task_manager, self.__task1, "College Homework Design"))
         self.__invoker.undo_last_command()  # Undo edit
-        self.__invoker.execute_command(CompleteTaskCommand(self.__task_manager, task1))
+        self.__invoker.execute_command(CompleteTaskCommand(self.__task_manager, self.__task1))
         self.__invoker.undo_last_command()  # Undo complete
-        self.__invoker.execute_command(CompleteTaskCommand(self.__task_manager, task1))
+        self.__invoker.execute_command(CompleteTaskCommand(self.__task_manager, self.__task1))
 
         # Operations with a second task
-        task2 = Task(2, "Report")
-        self.__invoker.execute_command(RemoveTaskCommand(self.__task_manager, task2))  # Attempting to remove a non-existing task
-        self.__invoker.execute_command(AddTaskCommand(self.__task_manager, task2))
+        self.__invoker.execute_command(RemoveTaskCommand(self.__task_manager, self.__task2))  # Attempting to remove a non-existing task
+        self.__invoker.execute_command(AddTaskCommand(self.__task_manager, self.__task2))
 
         # List all tasks at the end
         self.__task_manager.ListTasks()
