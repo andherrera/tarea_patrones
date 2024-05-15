@@ -3,10 +3,6 @@ from abc import ABC, abstractmethod
 
 
 class Builder(ABC):
-    
-    @property
-    @abstractmethod
-    
     @abstractmethod
     def agregarIngredientes():
         pass  
