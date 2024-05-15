@@ -4,9 +4,13 @@ Arquitectura de software - Grupo 3 (Python)
 Miembros:
 
 Andres Mauricio Herrera
+
 Bryan López
+
 Eddy Narvaez
+
 Edisson Bustos
+
 John Camargo
 
 ## 1. Sistema de gestión de tareas
